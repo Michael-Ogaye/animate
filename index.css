@@ -13,6 +13,7 @@
     text-align: center;
     cursor: pointer;
     font-size: 30px ;
+    font-size: clamp(1.5vw, 2.5vw, 2.5vw);
 }
 nav{
     background-color: orangered;
@@ -46,7 +47,7 @@ animation: flip 0.5s ease-in forwards ;
 }
 @keyframes flip{
     0%{transform: rotateY(0deg);}
-    50%{transform:  scale(2);}
+    
     100%{transform: rotateY(90deg);}
 }
 .wheel{
@@ -91,9 +92,12 @@ body{
 
 
     }}
-    @media screen and (max-width: 690px){
+    @media screen and (max-width: 750px){
         .panels li{
             width: 50%;
+        }
+        nav h2,.panels li div{
+            font-size: 16px;
         }
 
     }
