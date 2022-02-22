@@ -88,10 +88,11 @@ body{
     transform: translateX(2vw);
  border: 7px solid white;
 }
-    70%{transform: rotate3d(-180deg) scaleX(3);
+    60%{transform: rotate3d(-180deg) scaleX(3);
 
 
-    }}
+    }
+80%{border: 15px solid white;}}
     @media screen and (max-width: 750px){
         .panels li{
             width: 50%;
